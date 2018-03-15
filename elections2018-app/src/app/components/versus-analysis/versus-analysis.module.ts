@@ -1,3 +1,4 @@
+import { AMaterialModule } from './../../../shared-material/material.module';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -11,11 +12,13 @@ const routes: Routes = [
 @NgModule({
 	imports: [
 		CommonModule,
+		AMaterialModule,
 	RouterModule.forChild(routes)
 	],
 	declarations: [VersusAnalysisComponent],
 	exports: [
-		RouterModule
+		RouterModule,
+		AMaterialModule
 	]
 })
 export class VersusAnalysisModule { }

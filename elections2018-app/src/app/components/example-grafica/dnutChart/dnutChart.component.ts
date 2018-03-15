@@ -4,10 +4,11 @@ import { Component, EventEmitter } from '@angular/core';
     selector: 'dnutChart',
     templateUrl: 'dnutChart.component.html'
    })
+   //More examples in https://valor-software.com/ng2-charts/
    export class dnutChart {
     // Doughnut
-  public doughnutChartLabels:string[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-  public doughnutChartData:number[] = [350, 450, 100];
+  public doughnutChartLabels:string[] = ['PAN', 'PRI', 'MORENA'];
+  public doughnutChartData:number[] = [33, 33, 33];
   public doughnutChartType:string = 'doughnut';
  
   // events
